@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#0b0d10">
+<meta name="robots" content="noindex">
+<title>KEF Beykoz – sanal tur</title>
+<meta property="og:type" content="website">
+<meta property="og:title" content="KEF Beykoz">
+<meta property="og:description" content="Villa · 3 kat · 28 oda noktası">
+<meta property="og:image" content="https://ufuksarpy-dot.github.io/kef-tur/img/og.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:url" content="https://ufuksarpy-dot.github.io/kef-tur/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Villa · 3 kat · 28 oda noktası">
+<link rel="stylesheet" href="stil.css">
+</head>
+<body>
+<canvas id="c" aria-label="360 derece oda görüntüsü"></canvas>
+<div id="halkalar"></div>
+<div id="netlik"></div>
+
+<div id="ust">
+  <div id="oda"><b id="odaAd"></b><span id="katAd"></span></div>
+  <div id="dugmeler">
+    <button id="planDugme" class="yuv" type="button" aria-label="Kat planı"><svg viewBox="0 0 24 24"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z"/><path d="M9 4v14M15 6v14"/></svg></button>
+    <button id="menuDugme" class="yuv" type="button" aria-label="Menü"><svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.3"/><circle cx="12" cy="12" r="1.3"/><circle cx="19" cy="12" r="1.3"/></svg></button>
+  </div>
+</div>
+
+<div id="durum" role="status"></div>
+<div id="ipucu" hidden>Parmağını kaydır: <span>etrafa bak</span><br>Yerdeki halkaya dokun: <span>oraya yürü</span></div>
+
+<div id="alt">
+  <div id="serit">
+    <button id="katDugme" class="katd" type="button" hidden></button>
+    <div id="cipler"></div>
+  </div>
+  <div id="altsatir">
+    <span id="not">Görseller temsilidir.</span>
+    <a id="wa" target="_blank" rel="noopener" hidden><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2z"/></svg>Bilgi al</a>
+  </div>
+</div>
+<div id="katMenu" hidden></div>
+
+<div id="karartma"></div>
+<section class="panel" id="p-plan" aria-hidden="true"><div class="tutac"><i></i></div><div class="icerik"></div></section>
+<section class="panel" id="p-menu" aria-hidden="true"><div class="tutac"><i></i></div><div class="icerik"></div></section>
+<section class="panel" id="p-bilgi" aria-hidden="true"><div class="tutac"><i></i></div><div class="icerik"></div></section>
+<div id="bildirim" role="status"></div>
+
+<div id="acilis">
+  <picture><source media="(min-aspect-ratio: 1/1)" srcset="img/og.jpg"><img id="kapak" src="img/kapak.jpg" alt="" fetchpriority="high"></picture>
+  <div class="karart"></div>
+  <div id="logo" hidden><img id="logoImg" alt="" hidden><span id="logoAd"></span></div>
+  <div class="metin">
+    <h1 id="projeAd"></h1>
+    <div id="projeAlt"></div>
+    <button id="basla" class="buyuk" type="button">Evi gezmeye başla</button>
+    <div class="not">Görseller temsilidir.</div>
+  </div>
+</div>
+<script type="module" src="app.js"></script>
+</body>
+</html>
