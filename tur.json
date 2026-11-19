@@ -16,37 +16,15 @@
  },
  "katlar": [
   {
-   "id": "zemin-kat",
-   "ad": "Zemin kat",
-   "plan": {
-    "img": "img/plan-zemin-kat.jpg?v=19a49be0",
-    "genislik": 960,
-    "yukseklik": 1065,
-    "zemin_renk": "#9aab82"
-   },
-   "m2": 87.2,
-   "noktalar": [
-    "salon-1",
-    "salon-2",
-    "yemek-1",
-    "mutfak-1",
-    "antre-1",
-    "antre-2",
-    "wc-1",
-    "sandik-1",
-    "teras-1"
-   ]
-  },
-  {
    "id": "ust",
-   "ad": "Üst kat",
+   "ad": "Zemin kat (giriş)",
    "plan": {
-    "img": "img/plan-ust.jpg?v=f584f87e",
-    "genislik": 957,
-    "yukseklik": 1071,
+    "img": "img/plan-ust.jpg?v=12c1ac84",
+    "genislik": 1318,
+    "yukseklik": 1475,
     "zemin_renk": "#9aab82"
    },
-   "m2": 80.3,
+   "m2": 76.8,
    "noktalar": [
     "ust/antre-1",
     "ust/antre-2",
@@ -60,15 +38,37 @@
    ]
   },
   {
-   "id": "bodrum",
-   "ad": "Bodrum",
+   "id": "1-bodrum-kat",
+   "ad": "1. bodrum kat",
    "plan": {
-    "img": "img/plan-bodrum.jpg?v=b8353ea3",
-    "genislik": 957,
-    "yukseklik": 1066,
+    "img": "img/plan-1-bodrum-kat.jpg?v=68c0084f",
+    "genislik": 1318,
+    "yukseklik": 1475,
     "zemin_renk": "#9aab82"
    },
-   "m2": 83.5,
+   "m2": 86.7,
+   "noktalar": [
+    "salon-1",
+    "salon-2",
+    "yemek-1",
+    "mutfak-1",
+    "antre-1",
+    "antre-2",
+    "wc-1",
+    "sandik-1",
+    "teras-1"
+   ]
+  },
+  {
+   "id": "bodrum",
+   "ad": "2. bodrum kat",
+   "plan": {
+    "img": "img/plan-bodrum.jpg?v=bcde429b",
+    "genislik": 1318,
+    "yukseklik": 1475,
+    "zemin_renk": "#9aab82"
+   },
+   "m2": 83.7,
    "noktalar": [
     "bodrum/antre-1",
     "bodrum/antre-2",
@@ -85,46 +85,10 @@
  ],
  "odalar": [
   {
-   "id": "wc",
-   "ad": "WC",
-   "kat": "zemin-kat",
-   "m2": 4.4
-  },
-  {
-   "id": "sandik",
-   "ad": "Sandık Odası",
-   "kat": "zemin-kat",
-   "m2": 9.3
-  },
-  {
-   "id": "mutfak",
-   "ad": "Mutfak",
-   "kat": "zemin-kat",
-   "m2": 17.6
-  },
-  {
-   "id": "antre",
-   "ad": "Antre",
-   "kat": "zemin-kat",
-   "m2": 19.5
-  },
-  {
-   "id": "salon",
-   "ad": "Salon",
-   "kat": "zemin-kat",
-   "m2": 36.4
-  },
-  {
-   "id": "ust/vestiyer",
-   "ad": "Vestiyer Odası",
-   "kat": "ust",
-   "m2": 4.3
-  },
-  {
    "id": "ust/antre",
    "ad": "Antre",
    "kat": "ust",
-   "m2": 11.6
+   "m2": 8.2
   },
   {
    "id": "ust/yatak-kd",
@@ -139,99 +103,353 @@
    "m2": 3.7
   },
   {
+   "id": "ust/vestiyer",
+   "ad": "Vestiyer Odası",
+   "kat": "ust",
+   "m2": 4.3
+  },
+  {
    "id": "ust/banyo-gd",
    "ad": "Ebeveyn Banyosu",
    "kat": "ust",
-   "m2": 5.2
+   "m2": 5.3
   },
   {
    "id": "ust/banyo-gb",
    "ad": "Banyo (güneybatı)",
    "kat": "ust",
-   "m2": 3.5
-  },
-  {
-   "id": "ust/yatak-gb",
-   "ad": "Yatak Odası (güneybatı)",
-   "kat": "ust",
-   "m2": 13.7
+   "m2": 3.6
   },
   {
    "id": "ust/yatak-gd",
    "ad": "Ebeveyn Yatak Odası",
    "kat": "ust",
-   "m2": 24.9
+   "m2": 24.7
   },
   {
-   "id": "bodrum/teknik",
-   "ad": "Teknik Oda",
-   "kat": "bodrum",
-   "m2": 4.1
+   "id": "ust/yatak-gb",
+   "ad": "Yatak Odası (güneybatı)",
+   "kat": "ust",
+   "m2": 13.6
   },
   {
-   "id": "bodrum/camasir",
-   "ad": "Çamaşır Odası",
-   "kat": "bodrum",
-   "m2": 5.4
+   "id": "antre",
+   "ad": "Antre",
+   "kat": "1-bodrum-kat",
+   "m2": 19.1
+  },
+  {
+   "id": "sandik",
+   "ad": "Sandık Odası",
+   "kat": "1-bodrum-kat",
+   "m2": 9.2
+  },
+  {
+   "id": "mutfak",
+   "ad": "Mutfak",
+   "kat": "1-bodrum-kat",
+   "m2": 17.8
+  },
+  {
+   "id": "salon",
+   "ad": "Salon",
+   "kat": "1-bodrum-kat",
+   "m2": 36.4
+  },
+  {
+   "id": "wc",
+   "ad": "WC",
+   "kat": "1-bodrum-kat",
+   "m2": 4.2
   },
   {
    "id": "bodrum/oda",
    "ad": "Oda",
    "kat": "bodrum",
-   "m2": 13.0
-  },
-  {
-   "id": "bodrum/antre",
-   "ad": "Antre",
-   "kat": "bodrum",
-   "m2": 8.4
-  },
-  {
-   "id": "bodrum/merdiven",
-   "ad": "Merdiven",
-   "kat": "bodrum",
-   "m2": 7.7
-  },
-  {
-   "id": "bodrum/hamam",
-   "ad": "Hamam",
-   "kat": "bodrum",
-   "m2": 6.6
-  },
-  {
-   "id": "bodrum/wc-1",
-   "ad": "WC (kuzey)",
-   "kat": "bodrum",
-   "m2": 2.0
-  },
-  {
-   "id": "bodrum/wc-2",
-   "ad": "WC (güney)",
-   "kat": "bodrum",
-   "m2": 2.0
+   "m2": 12.9
   },
   {
    "id": "bodrum/sinema",
    "ad": "Sinema Odası",
    "kat": "bodrum",
-   "m2": 15.6
+   "m2": 15.5
+  },
+  {
+   "id": "bodrum/teknik",
+   "ad": "Teknik Oda",
+   "kat": "bodrum",
+   "m2": 6.1
   },
   {
    "id": "bodrum/spor",
    "ad": "Spor Odası",
    "kat": "bodrum",
    "m2": 18.7
+  },
+  {
+   "id": "bodrum/camasir",
+   "ad": "Çamaşır Odası",
+   "kat": "bodrum",
+   "m2": 5.5
+  },
+  {
+   "id": "bodrum/antre",
+   "ad": "Antre",
+   "kat": "bodrum",
+   "m2": 8.6
+  },
+  {
+   "id": "bodrum/merdiven",
+   "ad": "Merdiven",
+   "kat": "bodrum",
+   "m2": 5.9
+  },
+  {
+   "id": "bodrum/hamam",
+   "ad": "Hamam",
+   "kat": "bodrum",
+   "m2": 6.7
+  },
+  {
+   "id": "bodrum/wc-1",
+   "ad": "WC (kuzey)",
+   "kat": "bodrum",
+   "m2": 1.9
+  },
+  {
+   "id": "bodrum/wc-2",
+   "ad": "WC (güney)",
+   "kat": "bodrum",
+   "m2": 1.9
   }
  ],
  "noktalar": [
   {
+   "id": "ust/antre-1",
+   "ad": "Giriş – merdiven başı",
+   "oda": "ust/antre",
+   "kat": "ust",
+   "konum": [
+    3.934,
+    8.135,
+    5.33
+   ],
+   "komsular": [
+    "ust/antre-2",
+    "ust/vestiyer-1",
+    "ust/yatak-kd-1",
+    "antre-2"
+   ],
+   "plan": {
+    "x": 0.4257,
+    "y": 0.2298
+   },
+   "kisa": "Giriş",
+   "halkalar": {
+    "antre-2": {
+     "konum": [
+      1.33,
+      8.15,
+      2.34
+     ],
+     "etiket": "1. bodruma in"
+    }
+   },
+   "pano": {
+    "k2": "pano/ust_antre-1-2k.jpg?v=67cfd2be"
+   }
+  },
+  {
+   "id": "ust/antre-2",
+   "ad": "Antre – yatak odası kapıları",
+   "oda": "ust/antre",
+   "kat": "ust",
+   "konum": [
+    3.956,
+    5.681,
+    5.33
+   ],
+   "komsular": [
+    "ust/antre-1",
+    "ust/yatak-gb-1",
+    "ust/yatak-gd-1",
+    "ust/yatak-kd-1"
+   ],
+   "plan": {
+    "x": 0.4279,
+    "y": 0.4575
+   },
+   "kisa": "Antre",
+   "pano": {
+    "k2": "pano/ust_antre-2-2k.jpg?v=b562aaef"
+   }
+  },
+  {
+   "id": "ust/vestiyer-1",
+   "ad": "Vestiyer odası",
+   "oda": "ust/vestiyer",
+   "kat": "ust",
+   "konum": [
+    1.856,
+    9.271,
+    5.33
+   ],
+   "komsular": [
+    "ust/antre-1"
+   ],
+   "plan": {
+    "x": 0.2099,
+    "y": 0.1244
+   },
+   "kisa": "Vestiyer",
+   "pano": {
+    "k2": "pano/ust_vestiyer-1-2k.jpg?v=29b0d16b"
+   }
+  },
+  {
+   "id": "ust/yatak-kd-1",
+   "ad": "Yatak odası (kuzeydoğu)",
+   "oda": "ust/yatak-kd",
+   "kat": "ust",
+   "konum": [
+    6.034,
+    8.361,
+    5.33
+   ],
+   "komsular": [
+    "ust/antre-1",
+    "ust/antre-2",
+    "ust/banyo-kd-1"
+   ],
+   "plan": {
+    "x": 0.6437,
+    "y": 0.2088
+   },
+   "kisa": "Yatak odası 1",
+   "pano": {
+    "k2": "pano/ust_yatak-kd-1-2k.jpg?v=a0e51df9"
+   }
+  },
+  {
+   "id": "ust/banyo-kd-1",
+   "ad": "Banyo (kuzeydoğu)",
+   "oda": "ust/banyo-kd",
+   "kat": "ust",
+   "konum": [
+    7.185,
+    7.032,
+    5.33
+   ],
+   "komsular": [
+    "ust/yatak-kd-1"
+   ],
+   "plan": {
+    "x": 0.7632,
+    "y": 0.3322
+   },
+   "kisa": "Banyo 1",
+   "pano": {
+    "k2": "pano/ust_banyo-kd-1-2k.jpg?v=a1259279"
+   }
+  },
+  {
+   "id": "ust/yatak-gb-1",
+   "ad": "Yatak odası (güneybatı)",
+   "oda": "ust/yatak-gb",
+   "kat": "ust",
+   "konum": [
+    2.257,
+    3.515,
+    5.33
+   ],
+   "komsular": [
+    "ust/antre-2",
+    "ust/banyo-gb-1"
+   ],
+   "plan": {
+    "x": 0.2516,
+    "y": 0.6585
+   },
+   "kisa": "Yatak odası 2",
+   "pano": {
+    "k2": "pano/ust_yatak-gb-1-2k.jpg?v=60b08833"
+   }
+  },
+  {
+   "id": "ust/banyo-gb-1",
+   "ad": "Banyo (güneybatı)",
+   "oda": "ust/banyo-gb",
+   "kat": "ust",
+   "konum": [
+    1.71,
+    4.735,
+    5.33
+   ],
+   "komsular": [
+    "ust/yatak-gb-1"
+   ],
+   "plan": {
+    "x": 0.1948,
+    "y": 0.5452
+   },
+   "kisa": "Banyo 2",
+   "pano": {
+    "k2": "pano/ust_banyo-gb-1-2k.jpg?v=f8d7551c"
+   }
+  },
+  {
+   "id": "ust/yatak-gd-1",
+   "ad": "Ebeveyn yatak odası",
+   "oda": "ust/yatak-gd",
+   "kat": "ust",
+   "konum": [
+    8.198,
+    3.736,
+    5.33
+   ],
+   "komsular": [
+    "ust/antre-2",
+    "ust/banyo-gd-1"
+   ],
+   "plan": {
+    "x": 0.8684,
+    "y": 0.6379
+   },
+   "kisa": "Ebeveyn odası",
+   "pano": {
+    "k2": "pano/ust_yatak-gd-1-2k.jpg?v=200568a4"
+   }
+  },
+  {
+   "id": "ust/banyo-gd-1",
+   "ad": "Ebeveyn banyosu",
+   "oda": "ust/banyo-gd",
+   "kat": "ust",
+   "konum": [
+    7.141,
+    5.121,
+    5.33
+   ],
+   "komsular": [
+    "ust/yatak-gd-1"
+   ],
+   "plan": {
+    "x": 0.7587,
+    "y": 0.5094
+   },
+   "kisa": "Ebeveyn banyosu",
+   "pano": {
+    "k2": "pano/ust_banyo-gd-1-2k.jpg?v=43d5ae93"
+   }
+  },
+  {
    "id": "salon-1",
    "ad": "Salon – TV ve şömine",
    "oda": "salon",
-   "kat": "zemin-kat",
+   "kat": "1-bodrum-kat",
    "konum": [
-    4.553,
-    3.919,
+    4.514,
+    3.892,
     1.55
    ],
    "komsular": [
@@ -240,24 +458,22 @@
     "antre-2"
    ],
    "plan": {
-    "x": 0.4844,
-    "y": 0.6244
+    "x": 0.4859,
+    "y": 0.6235
    },
    "kisa": "Salon",
    "pano": {
-    "k2": "pano/salon-1-2k.jpg?v=5535d632",
-    "k4": "pano/salon-1-4k.jpg?v=6ca60b2f",
-    "k8": "pano/salon-1-8k.jpg?v=6f19cfa5"
+    "k2": "pano/salon-1-2k.jpg?v=104955d8"
    }
   },
   {
    "id": "salon-2",
    "ad": "Salon – bahçe tarafı",
    "oda": "salon",
-   "kat": "zemin-kat",
+   "kat": "1-bodrum-kat",
    "konum": [
-    5.212,
-    1.232,
+    5.168,
+    1.219,
     1.55
    ],
    "komsular": [
@@ -266,24 +482,22 @@
     "teras-1"
    ],
    "plan": {
-    "x": 0.5521,
-    "y": 0.8732
+    "x": 0.5538,
+    "y": 0.8715
    },
    "kisa": "Salon – bahçe",
    "pano": {
-    "k2": "pano/salon-2-2k.jpg?v=4d992b72",
-    "k4": "pano/salon-2-4k.jpg?v=e9c1c9a5",
-    "k8": "pano/salon-2-8k.jpg?v=879b4dac"
+    "k2": "pano/salon-2-2k.jpg?v=139334ec"
    }
   },
   {
    "id": "yemek-1",
    "ad": "Yemek alanı",
    "oda": "salon",
-   "kat": "zemin-kat",
+   "kat": "1-bodrum-kat",
    "konum": [
-    5.922,
-    2.804,
+    5.873,
+    2.782,
     1.55
    ],
    "komsular": [
@@ -292,48 +506,44 @@
     "teras-1"
    ],
    "plan": {
-    "x": 0.625,
-    "y": 0.7277
+    "x": 0.627,
+    "y": 0.7264
    },
    "kisa": "Yemek",
    "pano": {
-    "k2": "pano/yemek-1-2k.jpg?v=53b5b719",
-    "k4": "pano/yemek-1-4k.jpg?v=71cd50dc",
-    "k8": "pano/yemek-1-8k.jpg?v=fb635ea2"
+    "k2": "pano/yemek-1-2k.jpg?v=76494356"
    }
   },
   {
    "id": "mutfak-1",
    "ad": "Mutfak",
    "oda": "mutfak",
-   "kat": "zemin-kat",
+   "kat": "1-bodrum-kat",
    "konum": [
-    5.668,
-    6.15,
+    5.617,
+    6.102,
     1.55
    ],
    "komsular": [
     "antre-2"
    ],
    "plan": {
-    "x": 0.599,
-    "y": 0.4178
+    "x": 0.6004,
+    "y": 0.4184
    },
    "kisa": "Mutfak",
    "pano": {
-    "k2": "pano/mutfak-1-2k.jpg?v=d03e882b",
-    "k4": "pano/mutfak-1-4k.jpg?v=c11c15bf",
-    "k8": "pano/mutfak-1-8k.jpg?v=3d4d3c50"
+    "k2": "pano/mutfak-1-2k.jpg?v=359a7c5b"
    }
   },
   {
    "id": "antre-1",
-   "ad": "Antre – giriş",
+   "ad": "Antre",
    "oda": "antre",
-   "kat": "zemin-kat",
+   "kat": "1-bodrum-kat",
    "konum": [
-    4.137,
-    9.446,
+    4.108,
+    9.329,
     1.55
    ],
    "komsular": [
@@ -342,24 +552,22 @@
     "sandik-1"
    ],
    "plan": {
-    "x": 0.4417,
-    "y": 0.1127
+    "x": 0.4437,
+    "y": 0.1191
    },
-   "kisa": "Giriş",
+   "kisa": "Antre",
    "pano": {
-    "k2": "pano/antre-1-2k.jpg?v=cb8acb72",
-    "k4": "pano/antre-1-4k.jpg?v=560b7f10",
-    "k8": "pano/antre-1-8k.jpg?v=08819d4d"
+    "k2": "pano/antre-1-2k.jpg?v=2c5133b7"
    }
   },
   {
    "id": "antre-2",
    "ad": "Antre – merdiven",
    "oda": "antre",
-   "kat": "zemin-kat",
+   "kat": "1-bodrum-kat",
    "konum": [
-    3.61,
-    6.15,
+    3.59,
+    6.094,
     1.55
    ],
    "komsular": [
@@ -370,14 +578,30 @@
     "bodrum/antre-1"
    ],
    "plan": {
-    "x": 0.3875,
-    "y": 0.4178
+    "x": 0.39,
+    "y": 0.4192
    },
    "kisa": "Merdiven",
+   "halkalar": {
+    "ust/antre-1": {
+     "konum": [
+      0.8,
+      6.54,
+      1.08
+     ],
+     "etiket": "Zemin kata (girişe) çık"
+    },
+    "bodrum/antre-1": {
+     "konum": [
+      3.15,
+      8.15,
+      -0.175
+     ],
+     "etiket": "2. bodruma in"
+    }
+   },
    "pano": {
-    "k2": "pano/antre-2-2k.jpg?v=8fbb5091",
-    "k4": "pano/antre-2-4k.jpg?v=266856e6",
-    "k8": "pano/antre-2-8k.jpg?v=33b7a117"
+    "k2": "pano/antre-2-2k.jpg?v=8136ea46"
    },
    "yon": -70.0
   },
@@ -385,55 +609,51 @@
    "id": "wc-1",
    "ad": "WC",
    "oda": "wc",
-   "kat": "zemin-kat",
+   "kat": "1-bodrum-kat",
    "konum": [
-    2.373,
-    9.395,
+    2.372,
+    9.305,
     1.55
    ],
    "komsular": [
     "antre-1"
    ],
    "plan": {
-    "x": 0.2604,
-    "y": 0.1174
+    "x": 0.2634,
+    "y": 0.1213
    },
    "kisa": "WC",
    "pano": {
-    "k2": "pano/wc-1-2k.jpg?v=1f423994",
-    "k4": "pano/wc-1-4k.jpg?v=9448ad12",
-    "k8": "pano/wc-1-8k.jpg?v=7bdaeeb8"
+    "k2": "pano/wc-1-2k.jpg?v=190610b4"
    }
   },
   {
    "id": "sandik-1",
    "ad": "Sandık odası",
    "oda": "sandik",
-   "kat": "zemin-kat",
+   "kat": "1-bodrum-kat",
    "konum": [
-    6.074,
-    8.533,
+    6.02,
+    8.457,
     1.55
    ],
    "komsular": [
     "antre-1"
    ],
    "plan": {
-    "x": 0.6406,
-    "y": 0.1972
+    "x": 0.6422,
+    "y": 0.1999
    },
    "kisa": "Sandık odası",
    "pano": {
-    "k2": "pano/sandik-1-2k.jpg?v=ca90d300",
-    "k4": "pano/sandik-1-4k.jpg?v=b80b113e",
-    "k8": "pano/sandik-1-8k.jpg?v=f5d8edab"
+    "k2": "pano/sandik-1-2k.jpg?v=99fb64f3"
    }
   },
   {
    "id": "teras-1",
    "ad": "Teras – havuz başı",
    "oda": "teras",
-   "kat": "zemin-kat",
+   "kat": "1-bodrum-kat",
    "konum": [
     4.6,
     -2.4,
@@ -444,241 +664,13 @@
     "yemek-1"
    ],
    "plan": {
-    "x": 0.4892,
+    "x": 0.4948,
     "y": 0.96,
     "dis": true
    },
    "kisa": "Teras",
    "pano": {
-    "k2": "pano/teras-1-2k.jpg?v=f2e771d7",
-    "k4": "pano/teras-1-4k.jpg?v=80799359",
-    "k8": "pano/teras-1-8k.jpg?v=3427e0e5"
-   }
-  },
-  {
-   "id": "ust/antre-1",
-   "ad": "Antre – merdiven başı",
-   "oda": "ust/antre",
-   "kat": "ust",
-   "konum": [
-    3.671,
-    8.209,
-    4.95
-   ],
-   "komsular": [
-    "ust/antre-2",
-    "ust/vestiyer-1",
-    "ust/yatak-kd-1",
-    "antre-2"
-   ],
-   "plan": {
-    "x": 0.395,
-    "y": 0.2288
-   },
-   "kisa": "Merdiven",
-   "pano": {
-    "k2": "pano/ust_antre-1-2k.jpg?v=1e034650",
-    "k4": "pano/ust_antre-1-4k.jpg?v=5c44f68b",
-    "k8": "pano/ust_antre-1-8k.jpg?v=72b33548"
-   }
-  },
-  {
-   "id": "ust/antre-2",
-   "ad": "Antre – yatak odası kapıları",
-   "oda": "ust/antre",
-   "kat": "ust",
-   "konum": [
-    3.701,
-    5.745,
-    4.95
-   ],
-   "komsular": [
-    "ust/antre-1",
-    "ust/yatak-gb-1",
-    "ust/yatak-gd-1",
-    "ust/yatak-kd-1"
-   ],
-   "plan": {
-    "x": 0.3981,
-    "y": 0.4556
-   },
-   "kisa": "Antre",
-   "pano": {
-    "k2": "pano/ust_antre-2-2k.jpg?v=5ef74436",
-    "k4": "pano/ust_antre-2-4k.jpg?v=63a559de",
-    "k8": "pano/ust_antre-2-8k.jpg?v=e355eaf1"
-   }
-  },
-  {
-   "id": "ust/vestiyer-1",
-   "ad": "Vestiyer odası",
-   "oda": "ust/vestiyer",
-   "kat": "ust",
-   "konum": [
-    1.876,
-    9.344,
-    4.95
-   ],
-   "komsular": [
-    "ust/antre-1"
-   ],
-   "plan": {
-    "x": 0.21,
-    "y": 0.1242
-   },
-   "kisa": "Vestiyer",
-   "pano": {
-    "k2": "pano/ust_vestiyer-1-2k.jpg?v=5e7eb138",
-    "k4": "pano/ust_vestiyer-1-4k.jpg?v=aeea4de8",
-    "k8": "pano/ust_vestiyer-1-8k.jpg?v=34b086a3"
-   }
-  },
-  {
-   "id": "ust/yatak-kd-1",
-   "ad": "Yatak odası (kuzeydoğu)",
-   "oda": "ust/yatak-kd",
-   "kat": "ust",
-   "konum": [
-    6.084,
-    8.432,
-    4.95
-   ],
-   "komsular": [
-    "ust/antre-1",
-    "ust/antre-2",
-    "ust/banyo-kd-1"
-   ],
-   "plan": {
-    "x": 0.6437,
-    "y": 0.2082
-   },
-   "kisa": "Yatak odası 1",
-   "pano": {
-    "k2": "pano/ust_yatak-kd-1-2k.jpg?v=bbeb547d",
-    "k4": "pano/ust_yatak-kd-1-4k.jpg?v=7a7caac6",
-    "k8": "pano/ust_yatak-kd-1-8k.jpg?v=783d18ba"
-   }
-  },
-  {
-   "id": "ust/banyo-kd-1",
-   "ad": "Banyo (kuzeydoğu)",
-   "oda": "ust/banyo-kd",
-   "kat": "ust",
-   "konum": [
-    7.25,
-    7.093,
-    4.95
-   ],
-   "komsular": [
-    "ust/yatak-kd-1"
-   ],
-   "plan": {
-    "x": 0.7639,
-    "y": 0.3315
-   },
-   "kisa": "Banyo 1",
-   "pano": {
-    "k2": "pano/ust_banyo-kd-1-2k.jpg?v=02bf48ef",
-    "k4": "pano/ust_banyo-kd-1-4k.jpg?v=f58bd0a6",
-    "k8": "pano/ust_banyo-kd-1-8k.jpg?v=a94eed94"
-   }
-  },
-  {
-   "id": "ust/yatak-gb-1",
-   "ad": "Yatak odası (güneybatı)",
-   "oda": "ust/yatak-gb",
-   "kat": "ust",
-   "konum": [
-    2.282,
-    3.544,
-    4.95
-   ],
-   "komsular": [
-    "ust/antre-2",
-    "ust/banyo-gb-1"
-   ],
-   "plan": {
-    "x": 0.2518,
-    "y": 0.6583
-   },
-   "kisa": "Yatak odası 2",
-   "pano": {
-    "k2": "pano/ust_yatak-gb-1-2k.jpg?v=b6a850ee",
-    "k4": "pano/ust_yatak-gb-1-4k.jpg?v=7598596a",
-    "k8": "pano/ust_yatak-gb-1-8k.jpg?v=ee98e23a"
-   }
-  },
-  {
-   "id": "ust/banyo-gb-1",
-   "ad": "Banyo (güneybatı)",
-   "oda": "ust/banyo-gb",
-   "kat": "ust",
-   "konum": [
-    1.724,
-    4.781,
-    4.95
-   ],
-   "komsular": [
-    "ust/yatak-gb-1"
-   ],
-   "plan": {
-    "x": 0.1944,
-    "y": 0.5443
-   },
-   "kisa": "Banyo 2",
-   "pano": {
-    "k2": "pano/ust_banyo-gb-1-2k.jpg?v=d8ebbdcd",
-    "k4": "pano/ust_banyo-gb-1-4k.jpg?v=671da90c",
-    "k8": "pano/ust_banyo-gb-1-8k.jpg?v=3033fd25"
-   }
-  },
-  {
-   "id": "ust/yatak-gd-1",
-   "ad": "Ebeveyn yatak odası",
-   "oda": "ust/yatak-gd",
-   "kat": "ust",
-   "konum": [
-    8.264,
-    3.767,
-    4.95
-   ],
-   "komsular": [
-    "ust/antre-2",
-    "ust/banyo-gd-1"
-   ],
-   "plan": {
-    "x": 0.8683,
-    "y": 0.6377
-   },
-   "kisa": "Ebeveyn odası",
-   "pano": {
-    "k2": "pano/ust_yatak-gd-1-2k.jpg?v=fbe6b675",
-    "k4": "pano/ust_yatak-gd-1-4k.jpg?v=d2f123a5",
-    "k8": "pano/ust_yatak-gd-1-8k.jpg?v=652431f5"
-   }
-  },
-  {
-   "id": "ust/banyo-gd-1",
-   "ad": "Ebeveyn banyosu",
-   "oda": "ust/banyo-gd",
-   "kat": "ust",
-   "konum": [
-    7.2,
-    5.167,
-    4.95
-   ],
-   "komsular": [
-    "ust/yatak-gd-1"
-   ],
-   "plan": {
-    "x": 0.7586,
-    "y": 0.5089
-   },
-   "kisa": "Ebeveyn banyosu",
-   "pano": {
-    "k2": "pano/ust_banyo-gd-1-2k.jpg?v=6bc7ae5e",
-    "k4": "pano/ust_banyo-gd-1-4k.jpg?v=28f9d320",
-    "k8": "pano/ust_banyo-gd-1-8k.jpg?v=c6185b3b"
+    "k2": "pano/teras-1-2k.jpg?v=b862fbf8"
    }
   },
   {
@@ -687,9 +679,9 @@
    "oda": "bodrum/antre",
    "kat": "bodrum",
    "konum": [
-    2.799,
-    5.572,
-    -1.85
+    2.76,
+    5.527,
+    -1.95
    ],
    "komsular": [
     "bodrum/antre-2",
@@ -698,14 +690,22 @@
     "antre-2"
    ],
    "plan": {
-    "x": 0.3051,
-    "y": 0.4737
+    "x": 0.3038,
+    "y": 0.4717
    },
    "kisa": "Merdiven",
+   "halkalar": {
+    "antre-2": {
+     "konum": [
+      0.82,
+      7.08,
+      -2.1
+     ],
+     "etiket": "1. bodruma çık"
+    }
+   },
    "pano": {
-    "k2": "pano/bodrum_antre-1-2k.jpg?v=35ae5cac",
-    "k4": "pano/bodrum_antre-1-4k.jpg?v=79d858ff",
-    "k8": "pano/bodrum_antre-1-8k.jpg?v=54b70a19"
+    "k2": "pano/bodrum_antre-1-2k.jpg?v=6ce32d88"
    }
   },
   {
@@ -714,26 +714,25 @@
    "oda": "bodrum/antre",
    "kat": "bodrum",
    "konum": [
-    4.087,
-    6.667,
-    -1.85
+    4.044,
+    6.62,
+    -1.95
    ],
    "komsular": [
     "bodrum/antre-1",
     "bodrum/camasir-1",
     "bodrum/oda-1",
     "bodrum/hamam-1",
-    "bodrum/spor-1"
+    "bodrum/spor-1",
+    "bodrum/teknik-1"
    ],
    "plan": {
-    "x": 0.4378,
-    "y": 0.3724
+    "x": 0.4371,
+    "y": 0.3704
    },
    "kisa": "Antre",
    "pano": {
-    "k2": "pano/bodrum_antre-2-2k.jpg?v=adc69aa8",
-    "k4": "pano/bodrum_antre-2-4k.jpg?v=2425e98c",
-    "k8": "pano/bodrum_antre-2-8k.jpg?v=18d45279"
+    "k2": "pano/bodrum_antre-2-2k.jpg?v=dbc6fbb3"
    }
   },
   {
@@ -742,22 +741,20 @@
    "oda": "bodrum/teknik",
    "kat": "bodrum",
    "konum": [
-    1.906,
-    9.456,
-    -1.85
+    1.891,
+    9.381,
+    -1.95
    ],
    "komsular": [
-    "bodrum/camasir-1"
+    "bodrum/antre-2"
    ],
    "plan": {
-    "x": 0.2132,
-    "y": 0.1144
+    "x": 0.2135,
+    "y": 0.1142
    },
    "kisa": "Teknik oda",
    "pano": {
-    "k2": "pano/bodrum_teknik-1-2k.jpg?v=c323cfe1",
-    "k4": "pano/bodrum_teknik-1-4k.jpg?v=8cd526c5",
-    "k8": "pano/bodrum_teknik-1-8k.jpg?v=7cc446d8"
+    "k2": "pano/bodrum_teknik-1-2k.jpg?v=1df8e13d"
    }
   },
   {
@@ -766,23 +763,20 @@
    "oda": "bodrum/camasir",
    "kat": "bodrum",
    "konum": [
-    4.289,
-    8.797,
-    -1.85
+    4.244,
+    8.729,
+    -1.95
    ],
    "komsular": [
-    "bodrum/antre-2",
-    "bodrum/teknik-1"
+    "bodrum/antre-2"
    ],
    "plan": {
-    "x": 0.4587,
-    "y": 0.1754
+    "x": 0.4579,
+    "y": 0.1748
    },
    "kisa": "Çamaşır",
    "pano": {
-    "k2": "pano/bodrum_camasir-1-2k.jpg?v=24e9dfcd",
-    "k4": "pano/bodrum_camasir-1-4k.jpg?v=529b3ece",
-    "k8": "pano/bodrum_camasir-1-8k.jpg?v=a6d40607"
+    "k2": "pano/bodrum_camasir-1-2k.jpg?v=cccc030d"
    }
   },
   {
@@ -791,22 +785,20 @@
    "oda": "bodrum/oda",
    "kat": "bodrum",
    "konum": [
-    6.348,
-    8.949,
-    -1.85
+    6.285,
+    8.877,
+    -1.95
    ],
    "komsular": [
     "bodrum/antre-2"
    ],
    "plan": {
-    "x": 0.6709,
-    "y": 0.1613
+    "x": 0.6698,
+    "y": 0.161
    },
    "kisa": "Oda",
    "pano": {
-    "k2": "pano/bodrum_oda-1-2k.jpg?v=8f75bb48",
-    "k4": "pano/bodrum_oda-1-4k.jpg?v=3c1576b6",
-    "k8": "pano/bodrum_oda-1-8k.jpg?v=c23e10b2"
+    "k2": "pano/bodrum_oda-1-2k.jpg?v=d88b82f7"
    }
   },
   {
@@ -815,9 +807,9 @@
    "oda": "bodrum/hamam",
    "kat": "bodrum",
    "konum": [
-    6.47,
-    5.603,
-    -1.85
+    6.445,
+    5.562,
+    -1.95
    ],
    "komsular": [
     "bodrum/antre-2",
@@ -825,14 +817,12 @@
     "bodrum/wc-2"
    ],
    "plan": {
-    "x": 0.6834,
-    "y": 0.4709
+    "x": 0.6864,
+    "y": 0.4685
    },
    "kisa": "Hamam",
    "pano": {
-    "k2": "pano/bodrum_hamam-1-2k.jpg?v=4fb8744d",
-    "k4": "pano/bodrum_hamam-1-4k.jpg?v=b6d99be9",
-    "k8": "pano/bodrum_hamam-1-8k.jpg?v=78ed28d8"
+    "k2": "pano/bodrum_hamam-1-2k.jpg?v=26539071"
    }
   },
   {
@@ -841,22 +831,20 @@
    "oda": "bodrum/wc-1",
    "kat": "bodrum",
    "konum": [
-    8.244,
-    5.755,
-    -1.85
+    8.204,
+    5.712,
+    -1.95
    ],
    "komsular": [
     "bodrum/hamam-1"
    ],
    "plan": {
-    "x": 0.8662,
-    "y": 0.4568
+    "x": 0.8689,
+    "y": 0.4546
    },
    "kisa": "WC 1",
    "pano": {
-    "k2": "pano/bodrum_wc-1-2k.jpg?v=f395d2fc",
-    "k4": "pano/bodrum_wc-1-4k.jpg?v=2c49ce36",
-    "k8": "pano/bodrum_wc-1-8k.jpg?v=f5cfcf88"
+    "k2": "pano/bodrum_wc-1-2k.jpg?v=f2439c84"
    }
   },
   {
@@ -865,22 +853,20 @@
    "oda": "bodrum/wc-2",
    "kat": "bodrum",
    "konum": [
-    8.244,
-    4.335,
-    -1.85
+    8.204,
+    4.3,
+    -1.95
    ],
    "komsular": [
     "bodrum/hamam-1"
    ],
    "plan": {
-    "x": 0.8662,
-    "y": 0.5882
+    "x": 0.8689,
+    "y": 0.5856
    },
    "kisa": "WC 2",
    "pano": {
-    "k2": "pano/bodrum_wc-2-2k.jpg?v=4ec8df26",
-    "k4": "pano/bodrum_wc-2-4k.jpg?v=5eb44dfa",
-    "k8": "pano/bodrum_wc-2-8k.jpg?v=53f38d90"
+    "k2": "pano/bodrum_wc-2-2k.jpg?v=3005e333"
    }
   },
   {
@@ -889,22 +875,20 @@
    "oda": "bodrum/sinema",
    "kat": "bodrum",
    "konum": [
-    1.906,
-    4.183,
-    -1.85
+    1.889,
+    4.15,
+    -1.95
    ],
    "komsular": [
     "bodrum/antre-1"
    ],
    "plan": {
-    "x": 0.2132,
-    "y": 0.6023
+    "x": 0.2134,
+    "y": 0.5995
    },
    "kisa": "Sinema",
    "pano": {
-    "k2": "pano/bodrum_sinema-1-2k.jpg?v=52a30e3a",
-    "k4": "pano/bodrum_sinema-1-4k.jpg?v=1b66d8c2",
-    "k8": "pano/bodrum_sinema-1-8k.jpg?v=e38e7883"
+    "k2": "pano/bodrum_sinema-1-2k.jpg?v=dc3a3010"
    }
   },
   {
@@ -913,23 +897,21 @@
    "oda": "bodrum/spor",
    "kat": "bodrum",
    "konum": [
-    4.35,
-    2.349,
-    -1.85
+    4.308,
+    2.328,
+    -1.95
    ],
    "komsular": [
     "bodrum/antre-1",
     "bodrum/antre-2"
    ],
    "plan": {
-    "x": 0.465,
-    "y": 0.7719
+    "x": 0.4645,
+    "y": 0.7685
    },
    "kisa": "Spor",
    "pano": {
-    "k2": "pano/bodrum_spor-1-2k.jpg?v=49c64ffa",
-    "k4": "pano/bodrum_spor-1-4k.jpg?v=7e2d1135",
-    "k8": "pano/bodrum_spor-1-8k.jpg?v=0c4c4488"
+    "k2": "pano/bodrum_spor-1-2k.jpg?v=1127ab52"
    }
   }
  ]

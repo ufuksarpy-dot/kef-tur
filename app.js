@@ -207,10 +207,15 @@ function hotspotKur() {
   for (const id of cur.komsular || []) {
     const k = byId.get(id);
     if (!k) continue;
-    const [x, y, z] = zeminNoktasi(cur.konum, k.konum);
+    // Kat geçişi: tur.json 'halkalar' halkayı basamağın üstüne koyar (dünya: x doğu, y kuzey, z yukarı;
+    // konum[2] göz kotu). Yoksa komşunun döşemesine izdüşüm.
+    const ozel = cur.halkalar && cur.halkalar[id];
+    const [x, y, z] = ozel
+      ? [ozel.konum[0] - cur.konum[0], ozel.konum[2] - cur.konum[2], -(ozel.konum[1] - cur.konum[1])]
+      : zeminNoktasi(cur.konum, k.konum);
     const el = document.createElement('div');
-    el.className = 'hk';
-    const et = document.createElement('span'); et.className = 'hk-et'; et.textContent = k.ad;
+    el.className = ozel ? 'hk hk-kat' : 'hk';
+    const et = document.createElement('span'); et.className = 'hk-et'; et.textContent = (ozel && ozel.etiket) || k.ad;
     const hl = document.createElement('i'); hl.className = 'hk-halka';
     el.append(et, hl);
     halkaKap.appendChild(el);
