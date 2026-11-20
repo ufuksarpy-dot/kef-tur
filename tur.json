@@ -4586,15 +4586,15 @@
    "oda": "ust/dis",
    "kat": "ust",
    "konum": [
-    2.4,
-    13.0,
+    3.987,
+    12.95,
     5.31
    ],
    "komsular": [
     "ust/antre-1"
    ],
    "plan": {
-    "x": 0.2664,
+    "x": 0.4312,
     "y": 0.04,
     "dis": true
    },
@@ -4602,13 +4602,13 @@
     "ad": "Giriş avlusu"
    },
    "bahce": [
-    0.2042,
-    0.14
+    0.2703,
+    0.142
    ],
    "pano": {
-    "k2": "pano/ust_avlu-1-2k.jpg?v=d2a554cc"
+    "k2": "pano/ust_avlu-1-2k.jpg?v=73260555"
    },
-   "yon": 140.0
+   "yon": 155.0
   },
   {
    "id": "ust/antre-1",
