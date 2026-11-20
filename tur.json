@@ -2,7 +2,7 @@
  "surum": 1,
  "proje": {
   "ad": "KEF Beykoz",
-  "aciklama": "Villa · 3 kat · 47 oda noktası",
+  "aciklama": "Villa · 3 kat · 48 oda noktası",
   "ozet": "Villa · 3 kat · 23 oda",
   "muteahhit": null,
   "logo": null,
@@ -109,7 +109,8 @@
     "ates-1",
     "bahce-1",
     "dis-1",
-    "merdiven-1"
+    "merdiven-1",
+    "merdiven-2"
    ],
    "bahce": {
     "img": "img/bahce-1-bodrum-kat.jpg?v=b00a5fac",
@@ -5123,6 +5124,7 @@
     "salon-1",
     "mutfak-1",
     "merdiven-1",
+    "merdiven-2",
     "bodrum/merdiven-1"
    ],
    "plan": {
@@ -5157,6 +5159,7 @@
    ],
    "komsular": [
     "antre-2",
+    "merdiven-2",
     "ust/antre-1"
    ],
    "plan": {
@@ -5407,6 +5410,28 @@
    ],
    "pano": {
     "k2": "pano/dis-1-2k.jpg?v=5a9e85fe"
+   }
+  },
+  {
+   "id": "merdiven-2",
+   "ad": "Merdiven – alt",
+   "oda": "merdiven",
+   "kat": "1-bodrum-kat",
+   "konum": [
+    0.961,
+    5.431,
+    2.27
+   ],
+   "komsular": [
+    "merdiven-1",
+    "antre-2"
+   ],
+   "plan": {
+    "x": 0.117,
+    "y": 0.4807
+   },
+   "pano": {
+    "k2": "pano/merdiven-2-2k.jpg?v=aa17fa5b"
    }
   },
   {
