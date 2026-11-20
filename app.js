@@ -4,6 +4,7 @@
 import * as THREE from './lib/three.module.js';
 import { yonHesapla, zeminNoktasi, panoKuresi, aciFarki } from './geo.js';
 import { arayuzKur } from './arayuz.js';
+import { m2yaz } from './bicim.js';
 
 const $ = (s) => document.querySelector(s);
 const canvas = $('#c');
@@ -62,6 +63,7 @@ window.addEventListener('orientationchange', () => setTimeout(boyutla, 200));
 // ---------- veri
 let tur = null;
 const byId = new Map();
+const odaById = new Map();
 let cur = null;
 let arayuz = null;
 const mesaj = (s) => { durumEl.textContent = s || ''; };
@@ -215,7 +217,14 @@ function hotspotKur() {
       : zeminNoktasi(cur.konum, k.konum);
     const el = document.createElement('div');
     el.className = ozel ? 'hk hk-kat' : 'hk';
-    const et = document.createElement('span'); et.className = 'hk-et'; et.textContent = (ozel && ozel.etiket) || k.ad;
+    // Halkada her zaman oda adı ve alanı ("Mutfak · 17,8 m²"); aynı odadaki noktalarda da (Ufuk 20.11: aynı nokta
+    // iki ayrı adla görünmesin). Alanı olmayan yerde (dış mekân, merdiven) noktanın adı.
+    let yazi = (ozel && ozel.etiket) || k.ad;
+    if (!ozel && k.oda) {
+      const o = odaById.get(k.oda);
+      if (o && o.m2 != null) yazi = `${o.ad} · ${m2yaz(o.m2)}`;
+    }
+    const et = document.createElement('span'); et.className = 'hk-et'; et.textContent = yazi;
     const hl = document.createElement('i'); hl.className = 'hk-halka';
     el.append(et, hl);
     halkaKap.appendChild(el);
@@ -442,17 +451,23 @@ setInterval(() => { if (performance.now() - sonKare > 250) ciz(performance.now()
     return;
   }
   for (const n of tur.noktalar) byId.set(n.id, n);
+  for (const o of tur.odalar || []) odaById.set(o.id, o);
   document.title = (tur.proje.ad || 'Sanal tur') + ' – sanal tur';
   arayuz = arayuzKur({
     tur, byId, git, bakisSifirla: bakisiSifirla,
     cur: () => cur,
     bakisBilgi: () => ({ yaw: bakis.yaw / RAD, yatayFov: yatayFov() }),
+    odaBul: (n) => (n && n.oda ? odaById.get(n.oda) : null),
+    // cetvel için: dünya (x doğu, y kuzey, z yukarı; metre) -> kamera uzayı -> ekran. Kamera bulunulan noktada, göz kotunda.
+    kam: (wx, wy, wz) => { const c = cur.konum; v3.set(wx - c[0], wz - c[2], -(wy - c[1])).applyMatrix4(camera.matrixWorldInverse); return [v3.x, v3.y, v3.z]; },
+    ekran: (p) => { v3.set(p[0], p[1], p[2]).applyMatrix4(camera.projectionMatrix); return [(v3.x * 0.5 + 0.5) * canvas.clientWidth, (-v3.y * 0.5 + 0.5) * canvas.clientHeight]; },
+    boyut: () => ({ w: canvas.clientWidth, h: canvas.clientHeight }),
     boyutla,
   });
   requestAnimationFrame(dongu);
   const hash = decodeURIComponent(location.hash.slice(1));
   const kapak = tur.proje.kapak || {};
-  const ilk = byId.get(hash) || byId.get(kapak.nokta) || tur.noktalar[0];
+  const ilk = byId.get(hash) || byId.get(tur.proje.baslangic) || byId.get(kapak.nokta) || tur.noktalar[0];
   if (ilk.yon != null) bakis.yaw = ilk.yon * RAD;
   await git(ilk.id, { anlik: true });
   window.__tur = { bakis, git, get cur() { return cur; }, hotspots, camera, byId, get hedef() { return hedefId; }, net, cache, renderer }; // hata ayıklama

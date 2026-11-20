@@ -1,5 +1,9 @@
 // Arayüz: açılış ekranı, oda şeridi, kat planı / menü / ev bilgisi panelleri, ipucu, paylaşım.
 // Görüntüleyiciyle (app.js) yalnızca `api` üzerinden konuşur.
+import { planKur } from './plan.js';
+import { olcuKur } from './olcu.js';
+import { m2yaz, sayi1 } from './bicim.js';
+
 const $ = (s) => document.querySelector(s);
 const el = (etiket, sinif, metin) => {
   const e = document.createElement(etiket);
@@ -15,7 +19,6 @@ const IKON = {
   bas: '<svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><circle cx="12" cy="12" r="4"/></svg>',
   paylas: '<svg viewBox="0 0 24 24"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7M16 6l-4-4-4 4M12 2v13"/></svg>',
 };
-const m2yaz = (v) => v.toLocaleString('tr-TR', { minimumFractionDigits: 1, maximumFractionDigits: 1 }) + ' m²';
 const kucuk = (s) => s.toLocaleLowerCase('tr-TR');
 
 export function arayuzKur(api) {
@@ -25,7 +28,6 @@ export function arayuzKur(api) {
   const katById = new Map(katlar.map((k) => [k.id, k]));
   const cokKat = katlar.length > 1;
   let aktifKat = katlar[0].id;      // oda şeridinde gösterilen kat
-  let planKat = aktifKat;           // plan panelinde açık kat
   let bilgiKat = aktifKat;          // ev bilgisinde açık kat
   const telefon = proje.telefon ? String(proje.telefon) : null;
   const waNo = proje.whatsapp ? String(proje.whatsapp).replace(/\D/g, '') : null;
@@ -44,6 +46,19 @@ export function arayuzKur(api) {
 
   // dışarı taşan (kapalı paneller) öğeler sayfayı kaydırmasın
   for (const e of [document.body, document.documentElement]) e.addEventListener('scroll', () => { e.scrollTop = 0; e.scrollLeft = 0; });
+
+  // ---------- sol üst başlık: "kat · Oda 36,4 m²"; bahçe noktasında "Bahçe · yaklaşık 294 m²"
+  function baslikAlt(n) {
+    const kat = katById.get(n.kat);
+    if (n.bolge) {
+      // alanı olmayan bölge (giriş avlusu): başlıkla aynı adı tekrarlamak yerine "Zemin kat (giriş) · Giriş avlusu"
+      if (n.bolge.m2 == null) return `${kat.ad} · ${n.bolge.ad}`;
+      return n.bolge.ad + ' · ' + (n.bolge.yaklasik ? 'yaklaşık ' : '') + m2yaz(n.bolge.m2);
+    }
+    const o = api.odaBul(n);
+    if (!o) return kat.ad;
+    return `${kat.ad} · ${o.ad}${o.m2 != null ? ' ' + m2yaz(o.m2) : ''}`;
+  }
 
   // ---------- açılış
   const acilis = $('#acilis');
@@ -187,63 +202,18 @@ export function arayuzKur(api) {
     tutac.addEventListener('click', () => { if (!sonSurukleme || performance.now() - sonSurukleme > 400) panelKapat(); });
   }
 
-  // ---------- kat planı paneli
-  let koniEl = null, koniAci = -1;
-  function koniStil(acik) {
-    koniEl.style.background = `conic-gradient(from ${-acik / 2}deg, rgba(224,176,122,.8) 0deg ${acik}deg, transparent ${acik}deg)`;
-  }
-  function planHazirla() {
-    const kap = paneller.plan.querySelector('.icerik');
-    kap.textContent = '';
-    const c = api.cur();
-    if (cokKat) {
-      const sk = el('div', 'sekme');
-      for (const k of katlar) {
-        const b = el('button', k.id === planKat ? 'aktif' : '', k.ad); b.type = 'button';
-        b.addEventListener('click', () => { planKat = k.id; planHazirla(); });
-        sk.appendChild(b);
-      }
-      kap.appendChild(sk);
-    }
-    const kat = katById.get(planKat);
-    const kutu = el('div', 'plan');
-    kutu.style.setProperty('--oran', kat.plan.genislik / kat.plan.yukseklik);
-    kutu.style.background = kat.plan.zemin_renk || '#222';
-    const im = el('img'); im.src = kat.plan.img; im.alt = kat.ad + ' planı'; im.draggable = false;
-    kutu.appendChild(im);
-    koniEl = null; koniAci = -1;
-    const burada = c && c.kat === planKat ? c : null;
-    if (burada && burada.plan) {
-      koniEl = el('div', 'koni');
-      koniEl.style.left = burada.plan.x * 100 + '%'; koniEl.style.top = burada.plan.y * 100 + '%';
-      kutu.appendChild(koniEl);
-    }
-    for (const id of kat.noktalar) {
-      const n = byId.get(id);
-      if (!n.plan) continue;
-      const ben = burada && n.id === burada.id;
-      const b = el('button', 'nok' + (ben ? ' ben' : '') + (n.plan.dis ? ' dis' : '')); b.type = 'button';
-      b.style.left = n.plan.x * 100 + '%'; b.style.top = n.plan.y * 100 + '%';
-      b.setAttribute('aria-label', n.ad);
-      b.append(el('i'), el('span', null, ben ? 'Buradasınız' : (n.kisa || n.ad)));
-      b.addEventListener('click', () => {
-        if (tiklamaYut()) return;
-        if (!ben) { api.git(n.id); aktifKat = n.kat; if (cokKat) seritKur(); }
-        panelKapat();
-      });
-      kutu.appendChild(b);
-    }
-    kap.appendChild(kutu);
-    kap.appendChild(el('div', 'panelalt', 'Bir noktaya dokun, oraya geç. Panel aşağı çekilince kapanır.'));
-    kare();
-  }
-  function kare() { // her karede: yelpaze bakış yönüyle döner
-    if (acik !== 'plan' || !koniEl) return;
-    const { yaw, yatayFov } = api.bakisBilgi();
-    const acikAci = Math.round(Math.min(120, Math.max(30, yatayFov)));
-    if (acikAci !== koniAci) { koniAci = acikAci; koniStil(acikAci); }
-    koniEl.style.transform = `rotate(${yaw.toFixed(1)}deg)`;
-  }
+  // ---------- kat planı (tam ekran; ayrı modül)
+  const plan = planKur({
+    tur, byId, cur: api.cur, bakisBilgi: api.bakisBilgi, kapat: () => panelKapat(),
+    git: (id) => {
+      const n = byId.get(id); if (!n) return;
+      const c = api.cur();
+      if (!c || c.id !== id) { api.git(id); aktifKat = n.kat; if (cokKat) seritKur(); }
+      panelKapat();
+    },
+  });
+  function planHazirla() { plan.hazirla(paneller.plan.querySelector('.icerik')); }
+  function kare() { plan.kare(); olcu.kare(); }
 
   // ---------- menü
   function satir(ikon, metin, kucukYazi, etiket = 'button') {
@@ -311,28 +281,29 @@ export function arayuzKur(api) {
     const kap = paneller.bilgi.querySelector('.icerik');
     kap.textContent = '';
     const toplam = katlar.reduce((t, k) => t + (k.m2 || 0), 0);
-    kap.appendChild(el('div', 'rakam', Math.round(toplam) + ' m²'));
+    kap.appendChild(el('div', 'rakam', m2yaz(toplam)));
     kap.appendChild(el('div', 'tek', proje.ozet || ''));
     const kutular = el('div', 'kutular');
     for (const k of katlar) {
       const b = el('button', k.id === bilgiKat ? 'aktif' : ''); b.type = 'button';
-      b.append(el('b', null, String(Math.round(k.m2 || 0))), el('span', null, k.ad));
+      b.append(el('b', null, sayi1(k.m2 || 0)), el('span', null, k.ad));
       b.addEventListener('click', () => { bilgiKat = k.id; bilgiHazirla(); });
       kutular.appendChild(b);
     }
     kap.appendChild(kutular);
     const odalar = el('div', 'odalar');
-    for (const o of tur.odalar.filter((o) => o.kat === bilgiKat)) {
-      const d = el('div'); d.append(el('span', null, o.ad), el('span', null, m2yaz(o.m2)));
+    for (const o of tur.odalar.filter((o) => o.kat === bilgiKat && o.m2 != null)) {
+      const d = el('div'); d.append(el('span', null, o.ad), el('span', null, o.m2 != null ? m2yaz(o.m2) : ''));
       odalar.appendChild(d);
     }
     kap.appendChild(odalar);
   }
 
   const hazirla = { plan: planHazirla, menu: menuHazirla, bilgi: bilgiHazirla };
-  $('#planDugme').addEventListener('click', () => { const c = api.cur(); if (c) planKat = c.kat; panelAc('plan'); });
+  $('#planDugme').addEventListener('click', () => panelAc('plan'));
   $('#menuDugme').addEventListener('click', () => panelAc('menu'));
 
+  const olcu = olcuKur(api);
   seritKur();
 
   return {
@@ -341,7 +312,8 @@ export function arayuzKur(api) {
     hedefSecildi(id) { seritAktif(id); },
     odaDegisti(n) {
       $('#odaAd').textContent = n.ad;
-      $('#katAd').textContent = katById.get(n.kat).ad;
+      $('#katAd').textContent = baslikAlt(n);
+      olcu.sec(n);
       if (aktifKat !== n.kat) { aktifKat = n.kat; seritKur(); }
       seritAktif(n.id);
       waGuncelle(n);
