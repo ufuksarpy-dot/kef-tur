@@ -2,7 +2,7 @@
  "surum": 1,
  "proje": {
   "ad": "KEF Beykoz",
-  "aciklama": "Villa · 3 kat · 48 oda noktası",
+  "aciklama": "Villa · 3 kat · 51 oda noktası",
   "ozet": "Villa · 3 kat · 23 oda",
   "muteahhit": null,
   "logo": null,
@@ -20,10 +20,10 @@
    "id": "ust",
    "ad": "Zemin kat (giriş)",
    "plan": {
-    "img": "img/plan-ust.jpg?v=12c1ac84",
+    "img": "img/plan-ust.jpg?v=62632782",
     "genislik": 1318,
     "yukseklik": 1475,
-    "zemin_renk": "#9aab82"
+    "zemin_renk": "#a4bad8"
    },
    "m2": 76.5,
    "noktalar": [
@@ -41,10 +41,12 @@
     "ust/yatak-gd-2",
     "ust/yatak-gd-3",
     "ust/yatak-gd-4",
-    "ust/banyo-gd-1"
+    "ust/banyo-gd-1",
+    "ust/dis-1",
+    "ust/dis-2"
    ],
    "bahce": {
-    "img": "img/bahce-ust.jpg?v=174d7084",
+    "img": "img/bahce-ust.jpg?v=1794503d",
     "genislik": 1152,
     "yukseklik": 1200,
     "ad": "Giriş avlusu",
@@ -78,7 +80,9 @@
      }
     ],
     "noktalar": [
-     "ust/avlu-1"
+     "ust/avlu-1",
+     "ust/dis-1",
+     "ust/dis-2"
     ]
    }
   },
@@ -109,11 +113,12 @@
     "ates-1",
     "bahce-1",
     "dis-1",
+    "bahce-merdiven-1",
     "merdiven-1",
     "merdiven-2"
    ],
    "bahce": {
-    "img": "img/bahce-1-bodrum-kat.jpg?v=b00a5fac",
+    "img": "img/bahce-1-bodrum-kat.jpg?v=f28a0f9a",
     "genislik": 1152,
     "yukseklik": 1200,
     "ad": "Bahçe",
@@ -151,7 +156,8 @@
      "havuz-1",
      "ates-1",
      "bahce-1",
-     "dis-1"
+     "dis-1",
+     "bahce-merdiven-1"
     ]
    }
   },
@@ -4592,7 +4598,9 @@
     5.31
    ],
    "komsular": [
-    "ust/antre-1"
+    "ust/antre-1",
+    "ust/dis-1",
+    "ust/dis-2"
    ],
    "plan": {
     "x": 0.4312,
@@ -4665,7 +4673,8 @@
     "ust/antre-1",
     "ust/yatak-gb-1",
     "ust/yatak-kd-1",
-    "ust/yatak-gd-4"
+    "ust/yatak-gd-4",
+    "ust/yatak-gb-2"
    ],
    "plan": {
     "x": 0.4279,
@@ -4813,7 +4822,8 @@
     5.33
    ],
    "komsular": [
-    "ust/yatak-gb-1"
+    "ust/yatak-gb-1",
+    "ust/antre-2"
    ],
    "plan": {
     "x": 0.2872,
@@ -4975,6 +4985,80 @@
    }
   },
   {
+   "id": "ust/dis-1",
+   "ad": "Dış – yeni",
+   "oda": "ust/dis",
+   "kat": "ust",
+   "konum": [
+    11.831,
+    10.76,
+    5.31
+   ],
+   "komsular": [
+    "ust/avlu-1",
+    "ust/dis-2",
+    "bahce-merdiven-1",
+    "dis-1",
+    "bahce-1",
+    "havuz-1"
+   ],
+   "plan": {
+    "x": 0.96,
+    "y": 0.04,
+    "dis": true
+   },
+   "bolge": {
+    "ad": "Giriş avlusu"
+   },
+   "bahce": [
+    0.5971,
+    0.2296
+   ],
+   "pano": {
+    "k2": "pano/ust_dis-1-2k.jpg?v=f2e57320"
+   }
+  },
+  {
+   "id": "ust/dis-2",
+   "ad": "Dış – yeni",
+   "oda": "ust/dis",
+   "kat": "ust",
+   "konum": [
+    16.756,
+    10.813,
+    5.31
+   ],
+   "komsular": [
+    "ust/dis-1",
+    "ust/avlu-1",
+    "bahce-merdiven-1"
+   ],
+   "plan": {
+    "x": 0.96,
+    "y": 0.04,
+    "dis": true
+   },
+   "bolge": {
+    "ad": "Giriş avlusu"
+   },
+   "bahce": [
+    0.8023,
+    0.2275
+   ],
+   "halkalar": {
+    "bahce-merdiven-1": {
+     "konum": [
+      16.83,
+      7.275,
+      1.9
+     ]
+    }
+   },
+   "pano": {
+    "k2": "pano/ust_dis-2-2k.jpg?v=5f664758"
+   }
+  },
+  {
    "id": "salon-1",
    "ad": "Salon – TV ve şömine",
    "oda": "salon",
@@ -4987,7 +5071,8 @@
    "komsular": [
     "salon-2",
     "antre-2",
-    "salon-3"
+    "salon-3",
+    "merdiven-2"
    ],
    "plan": {
     "x": 0.4859,
@@ -4995,9 +5080,9 @@
    },
    "kisa": "Salon",
    "pano": {
-    "k2": "pano/salon-1-2k.jpg?v=f8a02541",
-    "k4": "pano/salon-1-4k.jpg?v=1f7985a1",
-    "k8": "pano/salon-1-8k.jpg?v=dd2f3637"
+    "k2": "pano/salon-1-2k.jpg?v=ec7a1fe8",
+    "k4": "pano/salon-1-4k.jpg?v=182184ee",
+    "k8": "pano/salon-1-8k.jpg?v=fd6aa28b"
    }
   },
   {
@@ -5022,9 +5107,9 @@
    },
    "kisa": "Salon – bahçe",
    "pano": {
-    "k2": "pano/salon-2-2k.jpg?v=3e650f4e",
-    "k4": "pano/salon-2-4k.jpg?v=2eedfdee",
-    "k8": "pano/salon-2-8k.jpg?v=15aebdde"
+    "k2": "pano/salon-2-2k.jpg?v=f47c4762",
+    "k4": "pano/salon-2-4k.jpg?v=8d1ba23f",
+    "k8": "pano/salon-2-8k.jpg?v=d9e01922"
    }
   },
   {
@@ -5040,16 +5125,17 @@
    "komsular": [
     "salon-1",
     "salon-2",
-    "yemek-1"
+    "yemek-1",
+    "merdiven-2"
    ],
    "plan": {
     "x": 0.1448,
     "y": 0.8001
    },
    "pano": {
-    "k2": "pano/salon-3-2k.jpg?v=622af178",
-    "k4": "pano/salon-3-4k.jpg?v=86d7bb14",
-    "k8": "pano/salon-3-8k.jpg?v=77b5fc07"
+    "k2": "pano/salon-3-2k.jpg?v=c13294dd",
+    "k4": "pano/salon-3-4k.jpg?v=c4006d8d",
+    "k8": "pano/salon-3-8k.jpg?v=983d935a"
    }
   },
   {
@@ -5073,9 +5159,9 @@
    },
    "kisa": "Yemek",
    "pano": {
-    "k2": "pano/yemek-1-2k.jpg?v=c6b702f8",
-    "k4": "pano/yemek-1-4k.jpg?v=973cdbad",
-    "k8": "pano/yemek-1-8k.jpg?v=8e3de86f"
+    "k2": "pano/yemek-1-2k.jpg?v=33d4a984",
+    "k4": "pano/yemek-1-4k.jpg?v=e43e1a05",
+    "k8": "pano/yemek-1-8k.jpg?v=0488d210"
    }
   },
   {
@@ -5098,9 +5184,9 @@
    },
    "kisa": "Mutfak",
    "pano": {
-    "k2": "pano/mutfak-1-2k.jpg?v=9d8eb0c7",
-    "k4": "pano/mutfak-1-4k.jpg?v=7616f100",
-    "k8": "pano/mutfak-1-8k.jpg?v=16701939"
+    "k2": "pano/mutfak-1-2k.jpg?v=3c30a0c0",
+    "k4": "pano/mutfak-1-4k.jpg?v=79c5ad41",
+    "k8": "pano/mutfak-1-8k.jpg?v=1d3e42ac"
    }
   },
   {
@@ -5122,9 +5208,9 @@
     "y": 0.5856
    },
    "pano": {
-    "k2": "pano/mutfak-2-2k.jpg?v=47863878",
-    "k4": "pano/mutfak-2-4k.jpg?v=a936228b",
-    "k8": "pano/mutfak-2-8k.jpg?v=79e7a043"
+    "k2": "pano/mutfak-2-2k.jpg?v=21dd75f9",
+    "k4": "pano/mutfak-2-4k.jpg?v=2522121c",
+    "k8": "pano/mutfak-2-8k.jpg?v=0a2a35a9"
    }
   },
   {
@@ -5187,9 +5273,9 @@
     }
    },
    "pano": {
-    "k2": "pano/antre-2-2k.jpg?v=02f431ad",
-    "k4": "pano/antre-2-4k.jpg?v=a83512c1",
-    "k8": "pano/antre-2-8k.jpg?v=6a7d3f03"
+    "k2": "pano/antre-2-2k.jpg?v=aa413d43",
+    "k4": "pano/antre-2-4k.jpg?v=e9a6a2eb",
+    "k8": "pano/antre-2-8k.jpg?v=58e96cb4"
    },
    "yon": -70.0
   },
@@ -5272,9 +5358,9 @@
    },
    "kisa": "Sandık odası",
    "pano": {
-    "k2": "pano/sandik-1-2k.jpg?v=cefeb0e1",
-    "k4": "pano/sandik-1-4k.jpg?v=4ff7c868",
-    "k8": "pano/sandik-1-8k.jpg?v=ff9f896a"
+    "k2": "pano/sandik-1-2k.jpg?v=c8407ace",
+    "k4": "pano/sandik-1-4k.jpg?v=bfc52ecc",
+    "k8": "pano/sandik-1-8k.jpg?v=e566cea9"
    }
   },
   {
@@ -5295,9 +5381,9 @@
     "y": 0.2099
    },
    "pano": {
-    "k2": "pano/sandik-2-2k.jpg?v=7155e94c",
-    "k4": "pano/sandik-2-4k.jpg?v=70532777",
-    "k8": "pano/sandik-2-8k.jpg?v=bdce544d"
+    "k2": "pano/sandik-2-2k.jpg?v=82c4b1a0",
+    "k4": "pano/sandik-2-4k.jpg?v=b8a031df",
+    "k8": "pano/sandik-2-8k.jpg?v=2259ceac"
    }
   },
   {
@@ -5332,9 +5418,9 @@
     0.716
    ],
    "pano": {
-    "k2": "pano/teras-1-2k.jpg?v=02918e90",
-    "k4": "pano/teras-1-4k.jpg?v=e7a6779f",
-    "k8": "pano/teras-1-8k.jpg?v=1c903dce"
+    "k2": "pano/teras-1-2k.jpg?v=056d23ab",
+    "k4": "pano/teras-1-4k.jpg?v=b44b77bc",
+    "k8": "pano/teras-1-8k.jpg?v=3064a3ba"
    }
   },
   {
@@ -5351,7 +5437,9 @@
     "teras-1",
     "ates-1",
     "bahce-1",
-    "dis-1"
+    "dis-1",
+    "bahce-merdiven-1",
+    "ust/dis-1"
    ],
    "plan": {
     "x": 0.96,
@@ -5368,9 +5456,9 @@
     0.736
    ],
    "pano": {
-    "k2": "pano/havuz-1-2k.jpg?v=09953edf",
-    "k4": "pano/havuz-1-4k.jpg?v=07b4aee1",
-    "k8": "pano/havuz-1-8k.jpg?v=05ff23d8"
+    "k2": "pano/havuz-1-2k.jpg?v=68dcfb35",
+    "k4": "pano/havuz-1-4k.jpg?v=25f1108f",
+    "k8": "pano/havuz-1-8k.jpg?v=95915d9e"
    }
   },
   {
@@ -5402,9 +5490,9 @@
     0.832
    ],
    "pano": {
-    "k2": "pano/ates-1-2k.jpg?v=a990703b",
-    "k4": "pano/ates-1-4k.jpg?v=9236817e",
-    "k8": "pano/ates-1-8k.jpg?v=633eeae5"
+    "k2": "pano/ates-1-2k.jpg?v=5c041ce2",
+    "k4": "pano/ates-1-4k.jpg?v=2841b4fe",
+    "k8": "pano/ates-1-8k.jpg?v=bfd3502b"
    }
   },
   {
@@ -5420,7 +5508,9 @@
    "komsular": [
     "mutfak-2",
     "havuz-1",
-    "dis-1"
+    "dis-1",
+    "bahce-merdiven-1",
+    "ust/dis-1"
    ],
    "plan": {
     "x": 0.96,
@@ -5437,9 +5527,9 @@
     0.4931
    ],
    "pano": {
-    "k2": "pano/bahce-1-2k.jpg?v=e117863c",
-    "k4": "pano/bahce-1-4k.jpg?v=01b48655",
-    "k8": "pano/bahce-1-8k.jpg?v=cb84427a"
+    "k2": "pano/bahce-1-2k.jpg?v=5c9f8997",
+    "k4": "pano/bahce-1-4k.jpg?v=ac8f7010",
+    "k8": "pano/bahce-1-8k.jpg?v=9fb68883"
    }
   },
   {
@@ -5454,7 +5544,9 @@
    ],
    "komsular": [
     "bahce-1",
-    "havuz-1"
+    "havuz-1",
+    "bahce-merdiven-1",
+    "ust/dis-1"
    ],
    "plan": {
     "x": 0.96,
@@ -5471,9 +5563,9 @@
     0.3646
    ],
    "pano": {
-    "k2": "pano/dis-1-2k.jpg?v=6872d58d",
-    "k4": "pano/dis-1-4k.jpg?v=3083a899",
-    "k8": "pano/dis-1-8k.jpg?v=c6ee2764"
+    "k2": "pano/dis-1-2k.jpg?v=3da61dae",
+    "k4": "pano/dis-1-4k.jpg?v=4b680520",
+    "k8": "pano/dis-1-8k.jpg?v=1f5e62b0"
    }
   },
   {
@@ -5488,7 +5580,9 @@
    ],
    "komsular": [
     "merdiven-1",
-    "antre-2"
+    "antre-2",
+    "salon-3",
+    "salon-1"
    ],
    "plan": {
     "x": 0.117,
@@ -5498,6 +5592,52 @@
     "k2": "pano/merdiven-2-2k.jpg?v=5730512b",
     "k4": "pano/merdiven-2-4k.jpg?v=c87a62b5",
     "k8": "pano/merdiven-2-8k.jpg?v=77f805a1"
+   }
+  },
+  {
+   "id": "bahce-merdiven-1",
+   "ad": "Bahçe merdiveni",
+   "oda": "dis",
+   "kat": "1-bodrum-kat",
+   "konum": [
+    16.83,
+    7.275,
+    3.45
+   ],
+   "komsular": [
+    "dis-1",
+    "bahce-1",
+    "havuz-1",
+    "ust/dis-2",
+    "ust/dis-1"
+   ],
+   "plan": {
+    "x": 0.96,
+    "y": 0.3096,
+    "dis": true
+   },
+   "bolge": {
+    "ad": "Bahçe",
+    "m2": 294,
+    "yaklasik": true
+   },
+   "bahce": [
+    0.8054,
+    0.369
+   ],
+   "halkalar": {
+    "ust/dis-2": {
+     "konum": [
+      16.756,
+      10.813,
+      3.76
+     ]
+    }
+   },
+   "pano": {
+    "k2": "pano/bahce-merdiven-1-2k.jpg?v=f2b63daf",
+    "k4": "pano/bahce-merdiven-1-4k.jpg?v=c029dfb8",
+    "k8": "pano/bahce-merdiven-1-8k.jpg?v=3aeb34ba"
    }
   },
   {
