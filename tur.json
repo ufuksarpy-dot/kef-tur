@@ -2,7 +2,7 @@
  "surum": 1,
  "proje": {
   "ad": "KEF Beykoz",
-  "aciklama": "Villa · 3 kat · 51 oda noktası",
+  "aciklama": "Villa · 3 kat · 52 oda noktası",
   "ozet": "Villa · 3 kat · 23 oda",
   "muteahhit": null,
   "logo": null,
@@ -114,6 +114,7 @@
     "bahce-1",
     "dis-1",
     "bahce-merdiven-1",
+    "dis-2",
     "merdiven-1",
     "merdiven-2"
    ],
@@ -157,7 +158,8 @@
      "ates-1",
      "bahce-1",
      "dis-1",
-     "bahce-merdiven-1"
+     "bahce-merdiven-1",
+     "dis-2"
     ]
    }
   },
@@ -5449,6 +5451,7 @@
     "bahce-1",
     "dis-1",
     "bahce-merdiven-1",
+    "dis-2",
     "ust/dis-1"
    ],
    "plan": {
@@ -5520,6 +5523,7 @@
     "havuz-1",
     "dis-1",
     "bahce-merdiven-1",
+    "dis-2",
     "ust/dis-1"
    ],
    "plan": {
@@ -5556,6 +5560,7 @@
     "bahce-1",
     "havuz-1",
     "bahce-merdiven-1",
+    "dis-2",
     "ust/dis-1"
    ],
    "plan": {
@@ -5618,6 +5623,7 @@
     "dis-1",
     "bahce-1",
     "havuz-1",
+    "dis-2",
     "ust/dis-2",
     "ust/dis-1"
    ],
@@ -5648,6 +5654,42 @@
     "k2": "pano/bahce-merdiven-1-2k.jpg?v=f2b63daf",
     "k4": "pano/bahce-merdiven-1-4k.jpg?v=c029dfb8",
     "k8": "pano/bahce-merdiven-1-8k.jpg?v=3aeb34ba"
+   }
+  },
+  {
+   "id": "dis-2",
+   "ad": "dış merdiven dibi",
+   "oda": "dis",
+   "kat": "1-bodrum-kat",
+   "konum": [
+    16.764,
+    3.75,
+    1.55
+   ],
+   "komsular": [
+    "bahce-merdiven-1",
+    "dis-1",
+    "bahce-1",
+    "havuz-1"
+   ],
+   "plan": {
+    "x": 0.96,
+    "y": 0.6366,
+    "dis": true
+   },
+   "bolge": {
+    "ad": "Bahçe",
+    "m2": 294,
+    "yaklasik": true
+   },
+   "bahce": [
+    0.8027,
+    0.51
+   ],
+   "pano": {
+    "k2": "pano/dis-2-2k.jpg?v=43e62763",
+    "k4": "pano/dis-2-4k.jpg?v=f6e5b645",
+    "k8": "pano/dis-2-8k.jpg?v=0fb909fe"
    }
   },
   {
