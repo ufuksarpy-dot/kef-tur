@@ -4615,9 +4615,9 @@
     0.142
    ],
    "pano": {
-    "k2": "pano/ust_avlu-1-2k.jpg?v=8e32901b",
-    "k4": "pano/ust_avlu-1-4k.jpg?v=906d217c",
-    "k8": "pano/ust_avlu-1-8k.jpg?v=24f9c778"
+    "k2": "pano/ust_avlu-1-2k.jpg?v=3193836b",
+    "k4": "pano/ust_avlu-1-4k.jpg?v=fe945743",
+    "k8": "pano/ust_avlu-1-8k.jpg?v=e12d7324"
    },
    "yon": 155.0
   },
@@ -4655,9 +4655,9 @@
     }
    },
    "pano": {
-    "k2": "pano/ust_antre-1-2k.jpg?v=79156faa",
-    "k4": "pano/ust_antre-1-4k.jpg?v=dba83c72",
-    "k8": "pano/ust_antre-1-8k.jpg?v=29b40b00"
+    "k2": "pano/ust_antre-1-2k.jpg?v=d7a3a7dd",
+    "k4": "pano/ust_antre-1-4k.jpg?v=452941a6",
+    "k8": "pano/ust_antre-1-8k.jpg?v=4fb0d4a9"
    }
   },
   {
@@ -4684,9 +4684,9 @@
    },
    "kisa": "Antre",
    "pano": {
-    "k2": "pano/ust_antre-2-2k.jpg?v=a0bc4c85",
-    "k4": "pano/ust_antre-2-4k.jpg?v=f596c9d4",
-    "k8": "pano/ust_antre-2-8k.jpg?v=e4a5a03f"
+    "k2": "pano/ust_antre-2-2k.jpg?v=44698b68",
+    "k4": "pano/ust_antre-2-4k.jpg?v=b7ba4839",
+    "k8": "pano/ust_antre-2-8k.jpg?v=546d897a"
    }
   },
   {
@@ -4708,9 +4708,9 @@
    },
    "kisa": "Vestiyer",
    "pano": {
-    "k2": "pano/ust_vestiyer-1-2k.jpg?v=3c9ca503",
-    "k4": "pano/ust_vestiyer-1-4k.jpg?v=77a57bfa",
-    "k8": "pano/ust_vestiyer-1-8k.jpg?v=5ce1c43f"
+    "k2": "pano/ust_vestiyer-1-2k.jpg?v=fd71fef9",
+    "k4": "pano/ust_vestiyer-1-4k.jpg?v=4f0ac781",
+    "k8": "pano/ust_vestiyer-1-8k.jpg?v=81763aae"
    }
   },
   {
@@ -4735,9 +4735,9 @@
    },
    "kisa": "Yatak odası 1",
    "pano": {
-    "k2": "pano/ust_yatak-kd-1-2k.jpg?v=499cc757",
-    "k4": "pano/ust_yatak-kd-1-4k.jpg?v=6f718e35",
-    "k8": "pano/ust_yatak-kd-1-8k.jpg?v=e04a94a7"
+    "k2": "pano/ust_yatak-kd-1-2k.jpg?v=4c904616",
+    "k4": "pano/ust_yatak-kd-1-4k.jpg?v=81a44d99",
+    "k8": "pano/ust_yatak-kd-1-8k.jpg?v=b7b7318d"
    }
   },
   {
@@ -4758,9 +4758,9 @@
     "y": 0.0986
    },
    "pano": {
-    "k2": "pano/ust_yatak-kd-2-2k.jpg?v=7543a3a3",
-    "k4": "pano/ust_yatak-kd-2-4k.jpg?v=fae2c1c6",
-    "k8": "pano/ust_yatak-kd-2-8k.jpg?v=6a22387f"
+    "k2": "pano/ust_yatak-kd-2-2k.jpg?v=8cafec6a",
+    "k4": "pano/ust_yatak-kd-2-4k.jpg?v=2687a560",
+    "k8": "pano/ust_yatak-kd-2-8k.jpg?v=304051e7"
    }
   },
   {
@@ -4783,9 +4783,9 @@
    },
    "kisa": "Banyo 1",
    "pano": {
-    "k2": "pano/ust_banyo-kd-1-2k.jpg?v=638a705b",
-    "k4": "pano/ust_banyo-kd-1-4k.jpg?v=6799625e",
-    "k8": "pano/ust_banyo-kd-1-8k.jpg?v=0ac26f3d"
+    "k2": "pano/ust_banyo-kd-1-2k.jpg?v=0dd3e235",
+    "k4": "pano/ust_banyo-kd-1-4k.jpg?v=b8f6f054",
+    "k8": "pano/ust_banyo-kd-1-8k.jpg?v=8b24a5ff"
    }
   },
   {
@@ -4809,9 +4809,9 @@
    },
    "kisa": "Yatak odası 2",
    "pano": {
-    "k2": "pano/ust_yatak-gb-1-2k.jpg?v=99b5d04e",
-    "k4": "pano/ust_yatak-gb-1-4k.jpg?v=41c8cfda",
-    "k8": "pano/ust_yatak-gb-1-8k.jpg?v=bf906d82"
+    "k2": "pano/ust_yatak-gb-1-2k.jpg?v=9e7a842f",
+    "k4": "pano/ust_yatak-gb-1-4k.jpg?v=bcc25b80",
+    "k8": "pano/ust_yatak-gb-1-8k.jpg?v=7482fb38"
    }
   },
   {
@@ -4833,9 +4833,9 @@
     "y": 0.9242
    },
    "pano": {
-    "k2": "pano/ust_yatak-gb-2-2k.jpg?v=0559a7c3",
-    "k4": "pano/ust_yatak-gb-2-4k.jpg?v=4b164417",
-    "k8": "pano/ust_yatak-gb-2-8k.jpg?v=fdba5a95"
+    "k2": "pano/ust_yatak-gb-2-2k.jpg?v=de82dfbc",
+    "k4": "pano/ust_yatak-gb-2-4k.jpg?v=1c5c627e",
+    "k8": "pano/ust_yatak-gb-2-8k.jpg?v=6adfd6f8"
    }
   },
   {
@@ -4884,9 +4884,9 @@
    },
    "kisa": "Ebeveyn odası",
    "pano": {
-    "k2": "pano/ust_yatak-gd-1-2k.jpg?v=91004d13",
-    "k4": "pano/ust_yatak-gd-1-4k.jpg?v=7edbef70",
-    "k8": "pano/ust_yatak-gd-1-8k.jpg?v=61d8a085"
+    "k2": "pano/ust_yatak-gd-1-2k.jpg?v=9b6c9756",
+    "k4": "pano/ust_yatak-gd-1-4k.jpg?v=aa7f456a",
+    "k8": "pano/ust_yatak-gd-1-8k.jpg?v=52bcd3a2"
    }
   },
   {
@@ -4908,9 +4908,9 @@
     "y": 0.901
    },
    "pano": {
-    "k2": "pano/ust_yatak-gd-2-2k.jpg?v=4e82c448",
-    "k4": "pano/ust_yatak-gd-2-4k.jpg?v=a9317bde",
-    "k8": "pano/ust_yatak-gd-2-8k.jpg?v=ec369ecd"
+    "k2": "pano/ust_yatak-gd-2-2k.jpg?v=3ae10e2b",
+    "k4": "pano/ust_yatak-gd-2-4k.jpg?v=5a1ffd07",
+    "k8": "pano/ust_yatak-gd-2-8k.jpg?v=1fd57a19"
    }
   },
   {
@@ -4934,9 +4934,9 @@
     "y": 0.6413
    },
    "pano": {
-    "k2": "pano/ust_yatak-gd-3-2k.jpg?v=f776bb78",
-    "k4": "pano/ust_yatak-gd-3-4k.jpg?v=3264e298",
-    "k8": "pano/ust_yatak-gd-3-8k.jpg?v=6336ba90"
+    "k2": "pano/ust_yatak-gd-3-2k.jpg?v=7ab4e934",
+    "k4": "pano/ust_yatak-gd-3-4k.jpg?v=8ddabbe1",
+    "k8": "pano/ust_yatak-gd-3-8k.jpg?v=8cfbe76d"
    }
   },
   {
@@ -4959,9 +4959,9 @@
     "y": 0.6552
    },
    "pano": {
-    "k2": "pano/ust_yatak-gd-4-2k.jpg?v=a2364a33",
-    "k4": "pano/ust_yatak-gd-4-4k.jpg?v=4f5ee93b",
-    "k8": "pano/ust_yatak-gd-4-8k.jpg?v=a2328657"
+    "k2": "pano/ust_yatak-gd-4-2k.jpg?v=168fec33",
+    "k4": "pano/ust_yatak-gd-4-4k.jpg?v=4d0772be",
+    "k8": "pano/ust_yatak-gd-4-8k.jpg?v=6c5ef7ea"
    }
   },
   {
@@ -5019,7 +5019,9 @@
     0.2296
    ],
    "pano": {
-    "k2": "pano/ust_dis-1-2k.jpg?v=f2e57320"
+    "k2": "pano/ust_dis-1-2k.jpg?v=b6e58a07",
+    "k4": "pano/ust_dis-1-4k.jpg?v=1310e621",
+    "k8": "pano/ust_dis-1-8k.jpg?v=52d83fa0"
    }
   },
   {
@@ -5059,7 +5061,9 @@
     }
    },
    "pano": {
-    "k2": "pano/ust_dis-2-2k.jpg?v=5f664758"
+    "k2": "pano/ust_dis-2-2k.jpg?v=153e6cc9",
+    "k4": "pano/ust_dis-2-4k.jpg?v=25966b13",
+    "k8": "pano/ust_dis-2-8k.jpg?v=07ab978a"
    }
   },
   {
