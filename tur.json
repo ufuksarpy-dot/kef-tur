@@ -4636,6 +4636,7 @@
     "ust/vestiyer-1",
     "ust/yatak-kd-1",
     "ust/avlu-1",
+    "ust/banyo-kd-1",
     "merdiven-1"
    ],
    "plan": {
@@ -4674,7 +4675,8 @@
     "ust/yatak-gb-1",
     "ust/yatak-kd-1",
     "ust/yatak-gd-4",
-    "ust/yatak-gb-2"
+    "ust/yatak-gb-2",
+    "ust/banyo-gb-1"
    ],
    "plan": {
     "x": 0.4279,
@@ -4772,7 +4774,8 @@
     5.33
    ],
    "komsular": [
-    "ust/yatak-kd-1"
+    "ust/yatak-kd-1",
+    "ust/antre-1"
    ],
    "plan": {
     "x": 0.7632,
@@ -4846,7 +4849,8 @@
     5.33
    ],
    "komsular": [
-    "ust/yatak-gb-1"
+    "ust/yatak-gb-1",
+    "ust/antre-2"
    ],
    "plan": {
     "x": 0.1948,
@@ -5226,7 +5230,8 @@
    "komsular": [
     "antre-2",
     "wc-1",
-    "sandik-1"
+    "sandik-1",
+    "sandik-2"
    ],
    "plan": {
     "x": 0.4437,
@@ -5374,7 +5379,8 @@
     1.55
    ],
    "komsular": [
-    "sandik-1"
+    "sandik-1",
+    "antre-1"
    ],
    "plan": {
     "x": 0.9101,
@@ -5683,7 +5689,10 @@
     "bodrum/oda-1",
     "bodrum/hamam-1",
     "bodrum/spor-1",
-    "bodrum/teknik-1"
+    "bodrum/teknik-1",
+    "bodrum/sinema-2",
+    "bodrum/oda-2",
+    "bodrum/hamam-2"
    ],
    "plan": {
     "x": 0.4371,
@@ -5815,7 +5824,8 @@
    ],
    "komsular": [
     "bodrum/oda-1",
-    "bodrum/wc-1"
+    "bodrum/wc-1",
+    "bodrum/antre-2"
    ],
    "plan": {
     "x": 0.9101,
@@ -5865,7 +5875,8 @@
    ],
    "komsular": [
     "bodrum/hamam-1",
-    "bodrum/wc-2"
+    "bodrum/wc-2",
+    "bodrum/antre-2"
    ],
    "plan": {
     "x": 0.7544,
@@ -5962,7 +5973,8 @@
     -1.95
    ],
    "komsular": [
-    "bodrum/sinema-1"
+    "bodrum/sinema-1",
+    "bodrum/antre-2"
    ],
    "plan": {
     "x": 0.1937,
