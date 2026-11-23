@@ -5662,7 +5662,6 @@
    ],
    "komsular": [
     "bodrum/antre-2",
-    "bodrum/sinema-1",
     "bodrum/spor-1",
     "bodrum/merdiven-1"
    ],
@@ -5696,7 +5695,9 @@
     "bodrum/teknik-1",
     "bodrum/sinema-2",
     "bodrum/oda-2",
-    "bodrum/hamam-2"
+    "bodrum/hamam-2",
+    "bodrum/sinema-1",
+    "bodrum/spor-2"
    ],
    "plan": {
     "x": 0.4371,
@@ -5952,8 +5953,8 @@
     -1.95
    ],
    "komsular": [
-    "bodrum/antre-1",
-    "bodrum/sinema-2"
+    "bodrum/sinema-2",
+    "bodrum/antre-2"
    ],
    "plan": {
     "x": 0.1811,
@@ -6027,7 +6028,8 @@
     -1.95
    ],
    "komsular": [
-    "bodrum/spor-1"
+    "bodrum/spor-1",
+    "bodrum/antre-2"
    ],
    "plan": {
     "x": 0.8374,
