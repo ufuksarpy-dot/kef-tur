@@ -153,17 +153,6 @@ canvas:active { cursor: grabbing; }
 /* başlık: sağdaki üç düğmenin altına taşmasın */
 #oda { max-width: calc(100% - 170px); }
 
-/* cetvel */
-#olcu { position: absolute; inset: 0; z-index: 1; pointer-events: none; overflow: hidden; }
-#olcuSvg { position: absolute; inset: 0; width: 100%; height: 100%; }
-.o-golge { fill: none; stroke: rgba(0,0,0,.4); stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
-.o-cizgi { fill: none; stroke: #fff; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
-.o-nokta { fill: none; stroke: #fff; stroke-width: 8; stroke-linecap: round; }
-#olcuEt .oe { position: absolute; left: 0; top: 0; background: #fff; color: #111; font-size: 12.5px; font-weight: 700; padding: 2px 7px; border-radius: 5px;
-  white-space: nowrap; box-shadow: 0 1px 6px rgba(0,0,0,.4); will-change: transform; }
-.yuv.aktif { background: #3fc1b0; border-color: #3fc1b0; }
-.yuv.aktif svg { stroke: #06201c; }
-
 /* tam ekran kat planı */
 .panel.tam { top: 0; margin: 0; max-width: none; max-height: none; height: 100%; border-radius: 0; padding: 0; background: #0d0f12;
   transform: none; opacity: 0; transition: opacity .2s, visibility 0s .2s; }
@@ -211,5 +200,4 @@ canvas:active { cursor: grabbing; }
   .pt-cip { font-size: 15px; padding: 8px 16px; }
   .pt-et b { font-size: 15px; } .pt-et span { font-size: 14px; } .pt-et.iri b { font-size: 18px; }
   .pt-nok i { width: 16px; height: 16px; margin: -8px 0 0 -8px; } .pt-nok.ben i { width: 22px; height: 22px; margin: -11px 0 0 -11px; }
-  #olcuEt .oe { font-size: 15px; padding: 3px 9px; }
 }

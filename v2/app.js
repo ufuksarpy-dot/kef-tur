@@ -458,10 +458,6 @@ setInterval(() => { if (performance.now() - sonKare > 250) ciz(performance.now()
     cur: () => cur,
     bakisBilgi: () => ({ yaw: bakis.yaw / RAD, yatayFov: yatayFov() }),
     odaBul: (n) => (n && n.oda ? odaById.get(n.oda) : null),
-    // cetvel için: dünya (x doğu, y kuzey, z yukarı; metre) -> kamera uzayı -> ekran. Kamera bulunulan noktada, göz kotunda.
-    kam: (wx, wy, wz) => { const c = cur.konum; v3.set(wx - c[0], wz - c[2], -(wy - c[1])).applyMatrix4(camera.matrixWorldInverse); return [v3.x, v3.y, v3.z]; },
-    ekran: (p) => { v3.set(p[0], p[1], p[2]).applyMatrix4(camera.projectionMatrix); return [(v3.x * 0.5 + 0.5) * canvas.clientWidth, (-v3.y * 0.5 + 0.5) * canvas.clientHeight]; },
-    boyut: () => ({ w: canvas.clientWidth, h: canvas.clientHeight }),
     boyutla,
   });
   requestAnimationFrame(dongu);

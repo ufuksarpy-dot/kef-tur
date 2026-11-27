@@ -1,7 +1,6 @@
 // Arayüz: açılış ekranı, oda şeridi, kat planı / menü / ev bilgisi panelleri, ipucu, paylaşım.
 // Görüntüleyiciyle (app.js) yalnızca `api` üzerinden konuşur.
 import { planKur } from './plan.js';
-import { olcuKur } from './olcu.js';
 import { m2yaz, sayi1 } from './bicim.js';
 
 const $ = (s) => document.querySelector(s);
@@ -213,7 +212,7 @@ export function arayuzKur(api) {
     },
   });
   function planHazirla() { plan.hazirla(paneller.plan.querySelector('.icerik')); }
-  function kare() { plan.kare(); olcu.kare(); }
+  function kare() { plan.kare(); }
 
   // ---------- menü
   function satir(ikon, metin, kucukYazi, etiket = 'button') {
@@ -303,7 +302,6 @@ export function arayuzKur(api) {
   $('#planDugme').addEventListener('click', () => panelAc('plan'));
   $('#menuDugme').addEventListener('click', () => panelAc('menu'));
 
-  const olcu = olcuKur(api);
   seritKur();
 
   return {
@@ -313,7 +311,6 @@ export function arayuzKur(api) {
     odaDegisti(n) {
       $('#odaAd').textContent = n.ad;
       $('#katAd').textContent = baslikAlt(n);
-      olcu.sec(n);
       if (aktifKat !== n.kat) { aktifKat = n.kat; seritKur(); }
       seritAktif(n.id);
       waGuncelle(n);
